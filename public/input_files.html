@@ -1,0 +1,63 @@
+<!DOCTYPE html">
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Files</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+  </head>
+  
+  <body>
+		
+	 <div class="header">
+    <div class="container">
+      <ul class="nav">
+				<li> <a href="home">Home</a> </li>
+				<li> <a href="project">Presentation</a> </li>
+				<li> <a href="instructions">How to</a> </li>
+				<li><a href="contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+	
+	  <div class="title_text">
+    <div class="container">  
+      <div class="main">
+        <h1>LOAD THE FILE</h1>
+      </div>
+    </div>
+  </div>
+	
+	<div id="maDivGauche">
+	   
+    
+		<form action="/uploadFile" method="post" enctype="multipart/form-data">
+
+			<p> <strong>INPUT FILES </strong></p>
+				<dt>Load the file with the termes representatif of the clusters :</dt>
+				<dd><input type="file" name="file1" /></dd>
+				<dt></dt>
+				<dt>Load the file with the termes and the genes :</dt>
+				<dd><input type="file" name="file2" /></dd>
+				<dt></dt>
+				<dd><input type="submit" value="Send the files" /></dd>
+		
+		</form>
+	</div>
+	
+	<div id="maDivDroite">
+		
+		<p> <strong>INDICATIONS </strong></p>
+		<p> 2 files must be upload as
+		input in order to create the vizualisation. </p>
+		<p> These two files must be in a CSV format. </p>
+		<p> The separator shoud be a semi-colon ';'. </p>
+		<p> The first file should coutain information
+		about terms who are representatif of the clusters.</p> 
+		<p>The second file should coutain information
+		about genes and the terms which are associated to them</p> 
+		<p><a href="instructions">See type of file</a> </li>
+	</div>
+
+  </body>
+</html>

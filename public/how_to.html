@@ -1,0 +1,76 @@
+<!DOCTYPE html">
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <title>How to</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+  </head>
+  
+  <body>
+
+	 <div class="header">
+    <div class="container">
+      <ul class="nav">
+				<li> <a href="home">Home</a> </li>
+				<li> <a href="project">Presentation</a> </li>	
+				<li><a href="input_files">Input files</a></li>
+				<li><a href="contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+	
+	  <div class="title_text">
+    <div class="container">  
+      <div class="main">
+        <h1>HOW TO</h1>
+      </div>
+    </div>
+  </div>
+    
+  	<div class="how_input">
+		<h3> INPUT </h3>
+    <p> 2 files must be use as input in order to create the visualization.</p>
+    <p> They have to be in a CSV format, as the example below : </p>
+		<p> 1st file : </p>	
+		<p> <img id=rep src="pictures/rep2.png" alt="ex1" class="image1"> </p>
+		
+		<p> 2nd file : </p>		
+		<p> <img id=term src="pictures/term2.png" alt="ex1" class="image2"> </p>	
+		<p>For the visulal optimazation, the number of terms by cluster and the number of genes for each terms should not exced 200. </p>			
+		</div>
+  
+		<div class="how_viz">
+		<h3> DYNAMIC VISUALIZATION </h3>
+		<p> There will be two visualization object on the page, a DAG on top and a treemap below.</p>
+		<p> <strong> On the DAG object : </strong></p>
+		<ul>
+		<li> A blue, green or orange rectangle is an interaction with the treemap.</li>
+		<li> A orange rectangle represents the root of the tree.</li>
+		<li> A green rectangle represents the representatives.</li>
+		<li> A blue rectangle represents the terms of interest of the CSV files.</li>
+		<li> The yellow rectangles represents the intersection terms between those previous mention terms.</li>
+		</ul>
+		<div class="img-dag">
+		<p> <img src="pictures/dag_root.png" alt="DAG example" class="image2.1"> </p>
+		<p>1. General visualization of the directed acyclic graph at the level 0 (links root to representatif terms).</p>
+		<p> <img src="pictures/dag_term.png" alt="DAG example" class="image2.2"> </p>
+		<p>2. General visualization of the directed acyclic graph at the level 2 (link root to terms).</p>
+		</div>
+		<p> <strong> On the treemap object : </strong></p>
+		<ul>
+		<li> There is three levels for this visualization. </li>
+		<li> First, the representatives are displayed.</li>
+		<li> Second level (when we click on one of the repsentatives of the first level), all the terms connected to this representatives are displayed</li>
+		<li> Third level represent all the genes connected to the term selected on the seconde level.</li>
+		</ul>
+		
+		<p> There is interactions from the DAG to the treemap, by clicking on the colored rectangles, and from the treemap to the DAG.</p>
+		<p><img src="pictures/treemap_root.png" alt="Treemap example" class="image2"> </p>
+
+    
+	</div>
+  
+  
+    </body>
+</html>
