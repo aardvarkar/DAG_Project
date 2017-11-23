@@ -1,3 +1,5 @@
+// The treemap is based on Mike Bostocks, model: https://bost.ocks.org/mike/treemap/
+
 d3.select('input[value="sumbyCount"]').property("checked", true);
 
 d3.json("/dag_treemap/biological_process.json", function(data1) {
