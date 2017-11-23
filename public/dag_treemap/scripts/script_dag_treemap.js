@@ -1,4 +1,4 @@
-// The treemap is based on Mike Bostocks, model: https://bost.ocks.org/mike/treemap/
+// The treemap is based on Mike Bostock's model: https://bost.ocks.org/mike/treemap/
 
 d3.select('input[value="sumbyCount"]').property("checked", true);
 
